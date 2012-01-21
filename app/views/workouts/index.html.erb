@@ -1,0 +1,7 @@
+<%= content_for :javascript do %>
+  <%= javascript_tag do %>
+    WorkoutApp.init(<%= @workouts.to_json %>);
+  <% end %>
+<% end %>
+<div id='left-sidebar'></div>
+<div id='main-area'></div>
